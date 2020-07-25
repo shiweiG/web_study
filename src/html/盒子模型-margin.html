@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*
+        *
+        *外边距margin：盒子与盒子之间的距离
+        *
+        *margin属性的所有用法和padding一样
+        *
+        */
+        /*外边距合并
+        *
+        *垂直排列的两个块元素，分别给上面的盒子设置向下的外边距，给下面加向上的外边距，此时会造成外边距合并问题，当两个数值相同时
+        *外边距就是这个值，当两个数值不同时，谁的值大时，外边距就是那个值
+        *
+        */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-bottom: 10px;
+
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            margin-top: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box1"></div>
+</body>
+</html>

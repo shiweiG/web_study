@@ -1,0 +1,222 @@
+body{
+    background-color: #f1f1f1;
+    height: 10000px;
+}
+/*头部样式*/
+.header-warp{
+    height: 35px;
+    background-color: #f5f5f5;
+    /*border: 1px solid;*/
+}
+.header{
+    width: 1190px;
+    height: 35px;
+    /*background-color: pink;*/
+    margin: 0 auto;
+}
+.header list01 {
+    float: left;
+}
+.header li{
+    float: left;
+    line-height: 35px;
+    /*
+    *在给元素设置行高后，在没有设置高度的时候
+    *高度就是行高
+    */
+}
+.header .list01 .twoList{
+    margin: 0 21px 0 5px;
+    /*
+    *亲请登录左侧有四种方法移动：
+    *1.给a设置margin-left：6px
+    *2.给li设置padding-left：6px
+    *3.给ul设置margin-left：6px
+    *4.给ul设置padding-left：6px
+    *5.给li设置margin-left：6px
+    *
+    */
+}
+.header .list01 li a{
+    /*a可以继承行高*/
+    display: block;
+}
+.header .list02{
+    float: right;
+}
+.white-warp{
+    height: 150px;
+    background-color: #f1f1f1;
+}
+.white-warp .white{
+    height:150px;
+    width: 1190px;
+    /*background-color: pink;*/
+    margin: 0 auto;
+}
+.white .logo{
+    float: left;
+    margin: 38px 0 0 22px;
+}
+/*第一种*/
+.white .logo a{
+    display: block;
+    height: 74px;
+    overflow: hidden;
+}
+/*第二种*/
+/*
+.white .logo a {
+    background: url("../images/logo.png") 0 0;
+    display: block;
+    width: 181px;
+    height: 74px;
+    text-indent: -99999px;
+
+}*/
+ .white .search{
+     width: 700px;
+     height: 120px;
+     /*background: yellow;*/
+     float: left;
+     margin: 30px 0 0 100px;
+
+}
+  .search-top li{
+     float: left;
+     width: 50px;
+     height: 25px;
+     line-height: 25px;
+     /*background-color: greenyellow;*/
+     text-align: center;
+     color: #ff4400;
+      cursor: pointer;
+ }
+  .search-top li:hover{
+      background-color: #ffeee5;
+  }
+ .search .search-top .current{
+     background-color: #ff4400;
+     color: #f1f1f1;
+     font-weight: 700;
+ }
+ .search-center input{
+     width: 500px;
+     height: 34px;
+     border: 3px solid #f50;
+     border-right: none;
+     float: left;
+     background: url("../images/放大镜.png") no-repeat 13px 11px;
+     text-indent: 32px;
+
+
+ }
+ .search-center button {
+     float: left;
+     width: 95px;
+     height: 40px;
+     color: #fff;
+     background-color: #ff4400;
+     cursor: pointer;
+     border: none;
+     font-size: 18px;
+     font-weight: 700;
+     border-top-right-radius: 15px;
+     border-bottom-right-radius: 15px;
+
+ }
+ .search-center .gao{
+     float: left;
+     margin-left: 5px;
+ }
+ .search-bottom li{
+     float:left;
+     margin-right: 9px;
+ }
+.search-bottom li a{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+}
+.main{
+    width: 1190px;
+    height: 555px;
+    /*background-color: pink;*/
+    margin: 0 auto;
+}
+.main-left{
+    width: 190px;
+    height: 555px;
+    background-color: #ff5000;
+    float: left;
+}
+.main-right{
+    width: 990px;
+    height: 555px;
+    background-color: yellow;
+    float: right;
+}
+.main-right-top{
+    height: 44px;
+    background-color: #f1f1f1;
+}
+.main-right-top ul{
+    margin-top: 4px;
+}
+
+.main-right-top .list01{
+    float: left;
+}
+.main-right-top .list01 li{
+    margin-left: 6px ;
+    float: left;
+}
+.main-right-top .list01 li a{
+    display: block;
+    height:28px;
+    padding: 0 8px;
+    /*background-color: #ff4400;*/
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff4400;
+    text-align: center;
+    line-height: 28px;
+}
+.main-right-top .list01 li a:hover{
+    background-color: #ff4400;
+    color: #f1f1f1;
+}
+.main-right-top .list02{
+    float: left;
+}
+.main-right-top .list02 li{
+    float: left;
+    margin-left: 7px;
+}
+.main-right-top .list02 li a{
+    display: block;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    padding:0 4px;
+    color: #3c3c3c;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 12px;
+}
+.main-right-top .list02 li a:hover{
+    background-color: #ff4400;
+    color: #f1f1f1;
+}
+
+/*========公共样式=======*/
+.f40{
+    color: #ff4400;!important;
+}
+.shuXian{
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+}

@@ -1,0 +1,91 @@
+/*=================================基本设置==================================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+dl,
+dd,
+dt,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td{
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {/*父元素字号得百分比*/
+    font-size: 100%;
+}
+em，i{
+    font-style: normal;
+}
+
+ul,li{
+    list-style: none;
+}
+del,s{
+    text-decoration: none;
+}
+img{
+    /*解决底部留白*/
+    display: block;
+}
+button,
+input,
+select,
+textares {
+    fprit-size: 100%;
+    outline: none;
+}
+table{
+    /*1px边框*/
+    border-collapse: collapse;
+    /*单元格与单元格之间的距离*/
+    border-spacing: 0;
+}
+/*======================风格设置====================*/
+body{
+    /*字体可以设置多个，浏览器按顺序依次识别，能识别就是直接使用
+    *字体可以有三种设置方式，中文 英文 unicode编码
+    */
+    font: 12px/1.5 Tahoma,\5b8b\4f53;
+    color: #6C6C6C;
+}
+body{
+    background-color: #f1f1f1;
+}
+a{
+    text-decoration: none;
+    color: #6C6C6C;
+}
+a:hover{
+    color: #f40;
+}
+/*清除浮动影响*/
+.clearfix:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+}
+.clearfix{
+    zoom: 1;
+}

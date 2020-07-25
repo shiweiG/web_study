@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*解决行内块底部留白
+        *display：block
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .nav{
+            width: 600px;
+            margin: 100px auto;
+        }
+        .nav ul li{
+            float: left;
+            margin-left: 5px;
+        }
+        .nav ul li a{
+            width: 100px;
+            height: 30px;
+            font-size: 14px;
+            background-color: red;
+            text-decoration: none;
+            color: #fff;
+            display:block;
+            text-align: center;
+            line-height: 30px;
+        }
+        .nav ul li a:hover{
+            background-color: yellow;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .main{
+            height: 200px;
+            background-color: yellow;
+        }
+        .clearfix:after{
+            display:block;
+            clear:both;
+            content:"";
+            visibility:hidden;
+            height:0;
+        }
+    </style>
+</head>
+<body>
+<!--从seo角度，由于a标签是重要的标签，导航对于网站来说也是重要的，此时如果将一堆导航
+排列在一起，搜索引擎会认为是在作弊，关键词堆砌-->
+<div class="nav">
+    <ul class="clearfix">
+        <li>
+            <a href="##">导航</a>
+        </li>
+        <li>
+            <a href="##">导航</a>
+        </li>
+        <li>
+            <a href="##">导航</a>
+        </li>
+        <li>
+            <a href="##">导航</a>
+        </li>
+        <li>
+            <a href="##">导航</a>
+        </li>
+    </ul>
+</div>
+<div class="main"></div>
+</body>
+</html>
